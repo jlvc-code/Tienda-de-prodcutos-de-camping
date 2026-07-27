@@ -1,0 +1,145 @@
+/*celular */
+@media (max-width: 767px){
+ .header_nav ul{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .header_nav{
+        text-align: center;
+        justify-content:center ;
+    }
+    .box_nav{
+        
+        text-align: center;
+    }
+    
+    .box_nav a:hover{
+        transform: none;
+    }
+
+    .botones{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-color: white;
+    }
+    
+    .botones:hover{
+        transform: none;
+        transition: none;
+    }
+
+
+    .info-adicional{
+        flex-direction: column;
+        gap: 0;
+        text-align: center;
+    }
+    
+    .incio{
+        text-align: center;
+        border-style:groove;
+        border: 4px solid white;
+        background-image: url(../img/fondocelular.png);
+             
+    }
+    .productos{
+        display: flex;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 5px;
+        justify-items: center;
+    }
+   
+    .producto{
+        position: relative; 
+        width: 250px;
+        border: 3px solid black;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    .precio{
+        position: absolute;
+        top: 2px;
+        left: 5px;
+        padding: 5px 10px;
+        border-radius: 20px;
+        font-weight: bold;
+    }
+}
+
+
+/*tablet*/
+@media screen and (min-width: 768px) and (max-width: 1023px){
+
+    .header_nav{
+        text-align: center;
+        justify-content:center ;
+    }
+
+    .header_nav ul {
+        flex-direction: row;
+        gap: 2px ;
+        justify-content: flex-end;
+    }
+
+    .incio{
+        text-align: center;
+    }
+
+    .box_nav{
+         max-width: auto;
+    }
+
+    .box_nav a:hover{
+        transform: none;
+    }
+
+    .botones{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 2px solid white;
+        
+    }
+
+    .botones:hover{
+        transform: none;
+        transition: none;
+    }
+
+    .info-adicional{
+        text-align: center;
+        width: 90%;
+        gap: 10px;
+    }
+
+   .productos{
+        display:grid;
+        grid-template-columns: repeat(3,1fr);
+        gap:20px;
+    }
+}
+
+/* Computadora */
+    @media  (min-width: 1024px){
+    .productos{
+        display: grid;
+         grid-template-columns: repeat(4, 1fr);
+        gap : 20px;
+    }
+
+    .header_nav ul {
+        flex-direction: row;
+        gap: 2px ;
+        justify-content: flex-end;
+    }
+
+    .producto{
+        width: 100%;
+        max-width: none;
+        gap: 5px;;
+    }
+}
